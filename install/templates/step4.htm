@@ -1,0 +1,98 @@
+<!--S:Main-->
+						<div class="content">
+							<div class="description">
+								<p>Enter the MySQL database connection info and test it in order to continue to the next step.</p>
+								<p class="warning">You must use an empty database to avoid losing data. This installer will overwrite all tables with the same name.</p>
+
+								<p>In case you need help, you can apply for the installation service on <a href="http://devsaver.com/contact/?department=8" target="_blank">devsaver.com</a>.</p>
+
+							</div>
+							<div class="center">
+								<form action="index.php?step=4&action=validate" class="form-database">
+									<ul>
+										<li>
+											<p>Server :<span></span></p>
+											<input type="text" placeholder="localhost" name="server" value="{SERVER}">
+											<div class="feedback">
+												<div class="good not">
+													<p class="icon-action"></p>
+													<p>Ok</p>
+												</div>
+												<div class="wrong">
+													<p class="icon-action"></p>
+													<p>Invalid server</p>
+												</div>
+											</div>
+										</li>
+										<li>
+											<p>Username :<span></span></p>
+											<input type="text" placeholder="Username" name="user" value="{USER}">
+											<div class="feedback">
+												<div class="good not">
+													<p class="icon-action"></p>
+													<p>Ok</p>
+												</div>
+												<div class="wrong">
+													<p class="icon-action"></p>
+													<p>Invalid login data</p>
+												</div>
+											</div>
+										</li>
+										<li>
+											<p>Password :<span></span></p>
+											<input type="password" placeholder="*****" name="pass" value="{PASS}">
+											<div class="feedback">
+												<div class="good not">
+													<p class="icon-action"></p>
+													<p>Ok</p>
+												</div>
+												<div class="wrong">
+													<p class="icon-action"></p>
+													<p>Password required</p>
+												</div>
+											</div>
+										</li>
+										<li>
+											<p>Database :<span></span></p>
+											<input type="text" placeholder="My database" name="database" value="{DATABASE}">
+											<div class="feedback">
+												<div class="good not">
+													<p class="icon-action"></p>
+													<p>Ok</p>
+												</div>
+												<div class="wrong">
+													<p class="icon-action"></p>
+													<p>Database doesn’t exist</p>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</form>
+							</div>
+							<div class="action-button">
+								<a href="#" class="btn btn-actions-blue mysql-check">test connection</a>
+								<a href="index.php?step=5" class="btn btn-actions-green btn-next hide">Next step</a>
+							</div>
+						</div>	
+<!--E:Main-->
+
+
+<!--S:Group-->
+									<table class="table">
+										{DATA}
+									</table>
+<!--E:Group-->
+
+<!--S:Element-->
+										<tr>
+											<td>{TITLE}</td>
+											<td>
+												<p class="{CLASS}"><span></span>{VALUE}</p>
+											</td>
+										</tr>
+<!--E:Element-->
+
+
+<!--S:Next-->
+								<a href="index.php?step=3" class="btn btn-actions-green btn-next">Next step</a>
+<!--E:Next-->

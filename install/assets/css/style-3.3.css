@@ -1,0 +1,15 @@
+.center p.your-date {
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 25px;
+}
+.center p.your-date b {
+	color: #414141;
+	font-weight: 400;
+}
+.center p.your-date a {
+	color: #00aeef;
+}
+.center p.your-date span {
+	color: #8f8f8f;
+}

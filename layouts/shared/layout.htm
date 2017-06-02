@@ -1,0 +1,68 @@
+<!doctype html>
+<html>
+    <head>
+		<title>{PUB:SEO_TITLE}</title>
+		<meta name="Description" content="{PUB:SEO_DESC}" />
+		<base href="{PRIV.BASE.HREF}" />
+
+		<meta property="fb:admins" content="{PUB:FB_ADMINS}"/>
+		<meta property="fb:app_id" content="{PUB:FB_APP}"/>
+
+
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		
+
+		<link rel="stylesheet" href="assets/css/index.php{OPT_CSS_NOCACHE}">
+		{PUB:SEO_CONV_HEAD}
+    </head>
+    <body class="{PUB:MENU_STICKY}">
+
+		<a href="#" id="menu-toggle-wrapper">
+			<div id="menu-toggle"></div>	
+		</a>
+		
+		<a href="{PUB:HOME_LINK}" id="inner-bar">			
+			<div class="logo-alt">
+				<img src="upload/logo-mini.png">
+			</div>
+		</a>
+
+		<div id="side-bar">
+			<div class="inner-wrapper">	
+				<div id="side-inner">
+
+					<div id="logo-wrapper">
+						<a href="{PUB:HOME_LINK}"><img src="upload/logo.png"></a>
+					</div>
+
+					<div id="side-contents">
+						{PUB:TOP_MENU}
+					</div>	
+
+					<div id="side-footer">
+						{MODULE:SOCIAL_PROFILES}						
+						<div id="copyright">
+							{LANG:COPYRIGHT}
+							<br><a href="https://devsaver.com" target="_blank">devsaver.com</a>
+						</div>
+					</div>
+					{PUB:LANG_MENU}
+				</div>
+
+				
+			</div>				
+		</div>
+		
+		<div id="main-content" class="abs dark-template">
+			{PB_EVENTS}
+		</div>
+
+		<script type="text/javascript" src="assets/js/index.js{OPT_JS_NOCACHE}"></script>
+		<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false&amp;language=en"></script>
+		{PUB:SEO_CONV_BODY}
+    
+	</body>
+
+</html>

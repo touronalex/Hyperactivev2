@@ -1,0 +1,93 @@
+<!--S:Main-->
+						<div class="content">
+							<div class="description">
+								<p>Enter the login info you want to use for accessing the administration panel. You can also edit these credentials later in the administrator section of the CMS.</p>
+							</div>
+							<div class="center">
+								<form action="index.php?step=5&action=validate" class="form-database form-administrator" method="post">
+									<ul>
+										<li>
+											<p>Username:<span></span></p>
+											<input type="text" placeholder="" name="user" value="{USER}">
+											<div class="feedback">
+												<div class="good not">
+													<p class="icon-action"></p>
+													<p>Ok</p>
+												</div>
+												<div class="wrong">
+													<p class="icon-action"></p>
+													<p>Enter username.</p>
+												</div>
+											</div>
+										</li>
+										<li>
+											<p>Password :<span></span></p>
+											<input type="password" placeholder="" name="pass" value="{PASS}">
+											<div class="feedback">
+												<div class="good not">
+													<p class="icon-action"></p>
+													<p>Ok</p>
+												</div>
+												<div class="wrong">
+													<p class="icon-action"></p>
+													<p>Type password</p>
+												</div>
+											</div>
+										</li>
+										<li>
+											<p>Confirm :<span></span></p>
+											<input type="password" placeholder="" name="confirm" value="{CONFIRM}">
+											<div class="feedback">
+												<div class="good not">
+													<p class="icon-action"></p>
+													<p>Ok</p>
+												</div>
+												<div class="wrong">
+													<p class="icon-action"></p>
+													<p>Confirm doesnt match</p>
+												</div>
+											</div>
+										</li>
+										<li>
+											<p>Email :<span></span></p>
+											<input type="text" placeholder="" name="email" value="{EMAIL}">
+											<div class="feedback">
+												<div class="good not">
+													<p class="icon-action"></p>
+													<p>Ok</p>
+												</div>
+												<div class="wrong">
+													<p class="icon-action"></p>
+													<p>Type Email</p>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</form>
+							</div>
+							<div class="action-button">
+								<a href="index.php?step=6" class="btn btn-actions-green btn-next admin-btn-next">Next step</a>
+							</div>
+						</div>	
+<!--E:Main-->
+
+
+<!--S:Group-->
+									<table class="table">
+										{DATA}
+									</table>
+<!--E:Group-->
+
+<!--S:Element-->
+										<tr>
+											<td>{TITLE}</td>
+											<td>
+												<p class="{CLASS}"><span></span>{VALUE}</p>
+											</td>
+										</tr>
+<!--E:Element-->
+
+
+<!--S:Next-->
+								<a href="index.php?step=3" class="btn btn-actions-green btn-next">Next step</a>
+<!--E:Next-->

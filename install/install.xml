@@ -1,0 +1,19 @@
+<files>
+	<file path="files/core.admins.sql"/>
+	<file path="files/core.modules.sql"/>
+	<file path="files/core.emails.sql"/>
+	<file path="files/core.languages.sql"/>
+	<file path="files/core.layouts.sql"/>
+	<file path="files/core.texts.sql"/>
+	<file path="files/core.widgets.sql"/>
+	<file path="files/core.widgets.custom.sql"/>
+	<file path="files/core.vars.sql"/>
+	<file path="files/core.currencies.sql"/>
+	<file path="files/core.version.sql"/>
+
+	<file path="files/folders.php"/>
+	<file path="files/protect.upload.php"/>
+	<file path="files/mysql.php"/>
+	<file path="files/administrator.php"/>
+	<file path="files/content.php"/>
+</files>

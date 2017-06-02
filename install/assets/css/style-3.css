@@ -1,0 +1,102 @@
+.form-database li {
+	height: 30px;
+	border-top: 1px solid #fcfcfc;
+	border-bottom: 1px solid #efefef;
+	overflow: hidden;
+}
+.form-database li > p{
+	float: left;
+	width: 110px;
+	text-align: left;
+	padding-left: 20px;
+	margin: 0;
+	text-transform: uppercase;
+	color: #00adef;
+	font-size: 12px;
+	font-weight: 400;
+	background-color: rgba(0,0,0,0.03);
+	line-height: 30px;
+}
+.form-database li input {
+	height: 100%;
+	border:none;
+	padding: 0 10px;
+	color: #7d7d7d;
+	font-size: 12px;
+	font-weight: 300;
+	width: 40%;
+	float: left;
+	background: transparent;
+	outline: none;
+}
+.form-database li > p span {
+	border-right: 12px solid rgba(255,255,255,0.9);
+	border-top: 34px solid transparent;
+	border-left: 0 solid transparent;
+	float: right;
+	margin-right: -1px;
+	margin-top: -4px;
+}
+::-webkit-input-placeholder { font-style: italic; }
+::-moz-placeholder { font-style: italic; } /* firefox 19+ */
+:-ms-input-placeholder { font-style: italic; } /* ie */
+input:-moz-placeholder { font-style: italic; }
+
+
+.feedback {
+	max-width: 150px;
+	float: right;
+}
+.feedback > div {
+	float: right;
+	height: 28px;
+	display: none;
+}
+.feedback p {
+	float: left;
+	font-size: 12px;
+	font-weight: 400;
+}
+.feedback .good p {
+	color: #a1c737;
+}
+.feedback .wrong p {
+	color: #ec1b23;
+}
+.feedback  p:last-child {
+	line-height: 30px;
+}
+.feedback .good p.icon-action {
+	background-image: url(../img/good-icon.png);
+	background-repeat: no-repeat;
+	background-position: 50%;
+}
+.feedback .wrong p.icon-action {
+	background-image: url(../img/wrong-icon.png);
+	background-repeat: no-repeat;
+	background-position: 50%;
+}
+.feedback  p.icon-action {
+	float: left;
+	margin-right: 5px;
+	border-radius: 50%;
+	margin-top: 7px;
+	width: 17px;
+	height: 15px;
+	text-align: center;
+}
+
+
+
+
+.correct {border-bottom-color: #a1c838 !important;}
+.correct > p {background-color: #a1c838 !important;}
+.correct .feedback .good {display: block !important; }
+
+
+.incorrect {border-bottom-color: #ec1b23 !important;}
+.incorrect > p {background-color: #ec1b23 !important;}
+.incorrect .feedback .wrong {display: block !important; }
+
+.correct > p span , .incorrect > p span  {border-right: 12px solid #ffffff !important;}
+.incorrect > p , .correct > p{	color: #fff !important;}

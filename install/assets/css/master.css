@@ -1,0 +1,257 @@
+@import "reset.css";
+
+@font-face{
+font-family: "Ubuntu";
+src: url(../fonts/Ubuntu-M.ttf);
+}
+@font-face{
+font-family: "Ubuntu";
+src: url(../fonts/Ubuntu-R.ttf);
+}
+@font-face{
+font-family: "Entypo";
+src: url(../fonts/entypo.ttf);
+}
+
+body {	background-image: url(../img/background.jpg) !important; background-position: 50%;-webkit-background-size: cover; background-size: cover;
+}
+.container {	height: 800px;
+}
+ol,ul{list-style:none; padding-left: 0;
+}
+
+a:active, a:focus{
+	text-decoration: none;
+	outline: none;
+}
+
+/* Left Container */
+.nav > li > a:hover, .nav > li > a:focus {	background: none;
+}
+.logo {	margin: 30px 0 40px 0;
+}
+.logo img{	max-width: 100%;
+}
+.left-bar-nav .nav li {	
+	height: 40px;
+	overflow: hidden;
+}
+.left-bar-nav .nav li a , .left-bar-nav .nav li > span {
+	height: 100%;
+	padding: 0;
+	line-height: 40px;
+	cursor: default;
+}
+.left-bar-nav .nav li span {
+	float: left;
+}
+.left-bar-nav .nav li span.slashes {
+	width: 23px;
+}
+.left-bar-nav .nav li a {
+	color: #fff;
+}
+.left-bar-nav .nav li a span {
+	border-radius: 50%;
+	width: 26px;
+	height: 26px;
+	text-align: center;
+	margin: 7px 8px 0 1px;
+	border: 2px solid #a5cd39;
+}
+.left-bar-nav .nav li a span p {
+	font-size: 11px;
+	color: #a5cd39;
+	line-height: 21px;
+}
+.left-bar-nav .nav li a span p.check-icon {
+	height: 100%;
+	display: none;
+	background-image: url(../img/check.png);
+	background-position: 50%;
+	background-repeat: no-repeat;
+}
+
+.left-bar-nav .nav li.previous-steps{
+	cursor: pointer!important;
+}
+.left-bar-nav .nav li.previous-steps p.check-icon {	display: block;
+}
+.left-bar-nav .nav li.previous-steps p.number-icon {	display: none;
+}
+.left-bar-nav .nav li.active{	box-shadow: 0 -1px 0 rgba(255,255,255,0.05); width: 130%;
+}
+.left-bar-nav .nav li.active span.slashes {	background-image: url(../img/nav-active.png);	background-repeat: no-repeat;
+}
+.left-bar-nav .nav li.active  a {	color: #231f20; background: url(../img/background-right.jpg)50% 50%; margin-left: 23px;
+}
+.left-bar-nav .nav li.active a span {	border-color: #00adef;
+}
+.left-bar-nav .nav li.active a span p {	color: #00adef;
+}
+.left-bar-nav .nav li.not-switched a span {	opacity: 0;
+}
+/* end  Left Container */
+
+
+
+
+
+
+/* Right Container */
+.right-container .top span.stage {
+	width: 30px;
+	height: 30px;
+	border: 2px solid #00adef;
+	border-radius: 50%;
+	float: left;
+	text-align: center;
+	margin-right: 10px;
+}
+.right-container .top span.stage p {
+	color: #00adef;
+	line-height: 25px;
+	font-size: 16px;
+	font-weight: 500;
+}
+.right-container {
+	padding-top: 70px;
+	max-width: 530px;
+	margin: 0 auto;
+	-moz-transform: rotate(2deg);
+	-webkit-transform: rotate(2deg);
+	-o-transform: rotate(2deg);
+	-ms-transform: rotate(2deg);
+	transform: rotate(2deg);
+}
+.col-sm-9 {
+	display: block;
+	overflow: hidden;
+	height: 100%;
+}
+.se-slope{
+	width: 96%;
+	-webkit-transform-origin: top center;
+	-moz-transform: rotate(-2deg);
+	-webkit-transform: rotate(-2deg);
+	-o-transform: rotate(-2deg);
+	-ms-transform: rotate(-2deg);
+	transform: rotate(-2deg);
+
+	border-top: 0 solid transparent;
+/*	border-bottom: 800px solid transparent;*/
+	border-bottom: 400px solid transparent;
+	border-right: 10px solid #00aeef;
+}
+.se-slope  {
+	height: 700px;
+	margin-top: -45px !important;
+	margin: 0 auto;
+	background: url(../img/background-right.jpg) repeat;
+}
+h3 {
+	color: #00adef;
+	font-size: 24px;
+}
+.line-separate {
+	height: 3px;
+	width: 100%;
+	margin: 30px 0;
+	background-color: #e1e1e1;
+}
+.description p {
+	color: #404040;
+	font-size: 15px;
+	font-weight: 300;
+	margin-bottom: 20px;
+}
+.content div p , .content div a , .content div input , .content div span {
+	font-family: "Roboto"
+}
+/* end Right Container */
+
+
+
+/* Scrollbar */
+.scrollbar {
+	overflow-y: auto;
+}
+#ex3::-webkit-scrollbar{
+	width:3px;
+	background-color: rgba(0,0,0,0.05);
+} 
+#ex3::-webkit-scrollbar-thumb , #ex3::-webkit-scrollbar-thumb:active , #ex3::-webkit-scrollbar-thumb:hover{
+	border-bottom: 4px solid transparent;
+	border-top: 4px solid transparent;
+	border-right: 3px solid #00aeef;
+}
+#ex3:active::-webkit-scrollbar{
+	background-color: rgba(0,0,0,0.1);
+} 
+/* end Scrollbar */
+
+
+
+
+
+@media (min-width: 768px){
+	.right-container {
+		padding:70px 20px 0 20px;
+	}
+}
+@media (max-width: 767px){
+	.right-container {
+		padding:70px 20px 0 20px;
+	}
+}
+
+
+
+/* 
+
+
+
+clasa-  active 			(pentru pagina activa)
+
+	 -	previous-steps  (pentru paginile trecute , pun bifa)
+
+	 -	not-switched  	(pentru paginile pe care nu am trecut , nu este nici numar nici bifa ) 
+
+
+
+
+*/
+
+.installer-container{
+}
+
+.install{
+}
+
+
+.credits {
+	position: absolute;
+	bottom: 40px;
+	right: 40px;
+	color: #a3a3a3;
+}
+
+#stempora {
+	position: relative;
+	top: 11px;
+	left: 5px;
+}
+
+
+#stempora{
+	width: 116px;
+	height: 35px;
+	background: url(../img/stempora.png) no-repeat 0 0;
+	overflow: hidden;
+	text-indent: -9999px;
+	display: inline-block;
+	background-position: 0 -35px;
+}
+#stempora:hover{
+	background-position: 0 0px;
+}

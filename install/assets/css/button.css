@@ -1,0 +1,93 @@
+a.btn {
+	text-transform: uppercase;
+	margin-right: 10px;
+	font-size: 13px;
+	margin-top: 15px;
+	font-family: "Ubuntu" !important;
+	font-weight: 500;
+	padding: 5px 12px;
+}
+
+
+a.btn.disabled,
+a.btn.disabled:hover,
+a.btn.disabled:active{
+	background: #ccc;
+	border-color: #ccc;
+}
+
+
+a.btn-actions-green:hover,
+a.btn-actions-green:active ,
+a.btn-actions-green:focus {
+	color: #a5cd39;
+	background-color: transparent;
+}
+.btn-actions-green {
+	background-color: #a5cd39;
+	border: 1px solid #a1c737;
+	color: #fff;
+}
+
+
+
+
+.btn-next{
+	padding-right: 30px !important;
+	background-image: url(../img/arrow-button-left.png);
+	background-repeat: no-repeat;
+	background-position: 93% 50%;
+}
+a.btn-next:hover,
+a.btn-next:active ,
+a.btn-next:focus {
+	background-image: url(../img/arrow-button-left-hover.png);
+}
+
+
+
+
+a.btn-actions-green-g:hover,
+a.btn-actions-green-g:active ,
+a.btn-actions-green-g:focus {
+	background-color: #a5cd39;
+	border: 1px solid #a1c737;
+	color: #fff;
+}
+.btn-actions-green-g {
+	border: 1px solid #a1c737;
+	color: #a5cd39;
+	background-color: transparent;
+}
+
+
+
+
+.btn-actions-blue{
+	border: 1px solid #00abea;
+	font-size: 12px;
+	color: #00abea;
+}
+a.btn-actions-blue:hover,
+a.btn-actions-blue:active ,
+a.btn-actions-blue:focus {
+	color: #fff;
+	background-color: #00abea;
+}
+
+
+
+
+
+a.btn-actions-green,
+a.btn-actions-green:hover,
+a.btn-actions-green-g,
+a.btn-actions-green-g:hover,
+a.btn-actions-blue,
+a.btn-actions-blue:hover
+{
+	transition: background-color 0.3s, transform 0.3s;
+-webkit-transition: background-color 0.3s, -webkit-transform 0.3s;
+}
+
+

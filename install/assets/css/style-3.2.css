@@ -1,0 +1,32 @@
+.center-import-data {
+	height: 165px;
+}
+ul.import-data-base li {
+	margin-bottom: 10px
+}
+ul.import-data-base li p{
+	font-size: 12px;
+	margin: 0;
+}
+
+ul.import-data-base li p.name-import {
+	color: #6f6f6f;
+}
+ul.import-data-base li p.icon-action {
+	float: left;
+	margin-right: 8px;
+	color: #a1c737;
+	border: 1px solid #a1c737;
+	border-radius: 50%;
+	padding: 0px 2px;
+	font-size: 11px;
+	width: 15px;
+	height: 15px;
+	background-image: url(../img/check-inport.png);
+	background-repeat: no-repeat;
+	background-position: 50%;
+}
+ul.import-data-base li:last-child p.icon-action {
+	border: none;
+	background: none;
+}
